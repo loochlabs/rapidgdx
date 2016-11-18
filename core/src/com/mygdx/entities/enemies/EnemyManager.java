@@ -5,9 +5,7 @@
  */
 package com.mygdx.entities.enemies;
 
-import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
-import java.util.Random;
 
 /**
  *
@@ -15,16 +13,17 @@ import java.util.Random;
  */
 public class EnemyManager {
     
-    public static Array<Enemy_TestMon> enemies = new Array<Enemy_TestMon>();
+    public static Array<EnemyEntity> enemies = new Array<EnemyEntity>();
     
-    public static void add(Enemy_TestMon e){
+    public static void add(EnemyEntity e){
         enemies.add(e);
     }
     
-    public static void remove(Enemy_TestMon e){
+    public static void remove(EnemyEntity e){
         enemies.removeValue(e, false);
     }
     
+    /*
     public static Enemy_TestMon createRandom(Vector2 pos){
         int index = 4;
         Random rng = new Random();
@@ -40,6 +39,6 @@ public class EnemyManager {
             default:
                 return new Enemy_Mousine(pos);
         }
-    }
+    }*/
     
 }

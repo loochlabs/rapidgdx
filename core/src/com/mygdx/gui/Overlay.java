@@ -11,7 +11,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.entities.enemies.EnemyManager;
-import com.mygdx.entities.enemies.Enemy_TestMon;
 import com.mygdx.game.MainGame;
 import com.mygdx.utilities.FrameManager;
 import com.mygdx.utilities.ResourceManager;
@@ -38,8 +37,6 @@ public class Overlay {
     //Using old endSpectralSprite from player death
     private boolean beginEndTransState = true, transitioning = false;
     
-    private final TrackingUI trackingUI = new TrackingUI();
-    
     public Overlay(){
         debugGrid = MainGame.am.get(ResourceManager.UI_GRID);
         
@@ -53,7 +50,6 @@ public class Overlay {
     
     public void update(){
         fm.update();
-        trackingUI.update();
     }
     
     public void render(SpriteBatch sb){
@@ -64,7 +60,6 @@ public class Overlay {
             
             renderTitleAlert(sb);
             renderTransion(sb);
-            trackingUI.render(sb);
         }
     }
        
@@ -135,40 +130,5 @@ public class Overlay {
         }
     }
     
-    
-    //Tracking UI component for viewing distance between player and existing enemies
-    
-    private class TrackingUI{
-        
-        private final float DISTANCE_1 = 1000f;
-        private final float DISTANCE_2 = 2000f;
-        private final float DISTANCE_3 = 3000f;
-        private final float DISTANCE_4 = 4000f;
-        private final float DISTANCE_5 = 5000f;
-        private int distanceMarker = 0;
-        
-        public TrackingUI(){}
-        
-        public void update(){
-        }
-        
-        public void render(SpriteBatch sb){
-            int count = 1;
-            for(Enemy_TestMon e : EnemyManager.enemies){
-                distanceMarker = e.distance() > DISTANCE_5 ? 5 : 
-                        e.distance() <= DISTANCE_5 && e.distance() > DISTANCE_4 ? 4 :
-                        e.distance() <= DISTANCE_4 && e.distance() > DISTANCE_3 ? 3 : 
-                        e.distance() <= DISTANCE_3 && e.distance() > DISTANCE_2 ? 2 :
-                        e.distance() <= DISTANCE_2 && e.distance() > DISTANCE_1 ? 1 :
-                        0;
-                if(distanceMarker >= 3) continue;
-                
-                sb.draw(e.getIconTexture(), 0,10 + titleFont.getCapHeight()*(count-1), 40,40);
-                titleFont.draw(sb, "" + distanceMarker + "" ,
-                    50, titleFont.getCapHeight()*count++);
-            }
-        }
-        
-    }
 
 }
