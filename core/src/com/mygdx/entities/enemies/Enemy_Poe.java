@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mygdx.entities.DynamicEntities.enemies;
+package com.mygdx.entities.enemies;
 
 import com.badlogic.gdx.math.Vector2;
 import com.mygdx.game.MainGame;
@@ -13,13 +13,13 @@ import com.mygdx.utilities.ResourceManager;
  *
  * @author saynt
  */
-public class Enemy_Lumen extends Enemy_TestMon{
+public class Enemy_Poe extends Enemy_TestMon{
     
-    public Enemy_Lumen(Vector2 pos) {
+    public Enemy_Poe(Vector2 pos) {
         super(pos);
         
-        idleTexture = MainGame.am.get(ResourceManager.ENEMY_LUMEN_IDLE);
-        deadTexture = MainGame.am.get(ResourceManager.ENEMY_LUMEN_DEAD);
+        idleTexture = MainGame.am.get(ResourceManager.ENEMY_POE_IDLE);
+        deadTexture = MainGame.am.get(ResourceManager.ENEMY_POE_DEAD);
         texture = idleTexture;
     }
     

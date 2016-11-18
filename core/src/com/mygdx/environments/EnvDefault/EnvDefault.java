@@ -7,7 +7,7 @@ package com.mygdx.environments.EnvDefault;
 
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
-import com.mygdx.entities.DynamicEntities.enemies.EnemyManager;
+import com.mygdx.entities.enemies.EnemyManager;
 import com.mygdx.entities.StaticEntities.BlankWall;
 import com.mygdx.environments.Environment;
 import com.mygdx.game.MainGame;
@@ -44,21 +44,6 @@ public class EnvDefault extends Environment{
         this.setPlayerToStart();
         
         
-        //Fill possible spawn locations for this Environment
-        spawns.add(new Vector2(1000*RATIO,1000*RATIO));
-        spawns.add(new Vector2(1100*RATIO,1000*RATIO));
-        spawns.add(new Vector2(2400*RATIO,1300*RATIO));
-        spawns.add(new Vector2(3400*RATIO,4300*RATIO));
-        spawns.add(new Vector2(700*RATIO,3400*RATIO));
-        spawns.add(new Vector2(4100*RATIO,2300*RATIO));
-        spawns.add(new Vector2(3100*RATIO,800*RATIO));
-        spawns.add(new Vector2(1000*RATIO,1800*RATIO));
-        spawns.add(new Vector2(4000*RATIO,2200*RATIO));
-        spawns.add(new Vector2(4300*RATIO,2800*RATIO));
-        spawns.add(new Vector2(3400*RATIO,3400*RATIO));
-        spawns.add(new Vector2(2000*RATIO,3400*RATIO));
-        spawns.add(new Vector2(4500*RATIO,1800*RATIO));
-        
     }
     
     @Override
@@ -76,17 +61,6 @@ public class EnvDefault extends Environment{
         spawnEntity(new BlankWall(new Vector2( (fgx) + width/2, height*0.95f),  width/2,  border));//north
         spawnEntity(new BlankWall(new Vector2( (fgx) + width*0.92f, height/2),  border, height/2));//east
         spawnEntity(new BlankWall(new Vector2( (fgx) + width*0.08f, height/2),   border, height/2));//west
-        
-        try {
-            for (int i = 0; i < 10; i++) {
-                Vector2 v = spawns.random();
-                spawns.removeValue(v, false);
-                spawnEntity(EnemyManager.createRandom(v));
-            }
-        } catch (NullPointerException ex) {
-            ex.printStackTrace();
-        }
-        
         
     }
     

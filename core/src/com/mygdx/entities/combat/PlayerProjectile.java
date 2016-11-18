@@ -7,7 +7,7 @@ package com.mygdx.entities.combat;
 
 import com.badlogic.gdx.math.Vector2;
 import com.mygdx.entities.Entity;
-import com.mygdx.entities.DynamicEntities.projectiles.ProjectileEntity;
+import com.mygdx.entities.projectiles.ProjectileEntity;
 import com.mygdx.environments.EnvironmentManager;
 import com.mygdx.game.MainGame;
 import static com.mygdx.game.MainGame.RATIO;

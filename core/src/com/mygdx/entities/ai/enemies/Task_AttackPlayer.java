@@ -7,7 +7,7 @@ package com.mygdx.entities.ai.enemies;
 
 import com.badlogic.gdx.ai.btree.LeafTask;
 import com.badlogic.gdx.ai.btree.Task;
-import com.mygdx.entities.DynamicEntities.enemies.EnemyEntity;
+import com.mygdx.entities.enemies.EnemyEntity;
 
 /**
  *

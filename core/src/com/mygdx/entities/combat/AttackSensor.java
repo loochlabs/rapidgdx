@@ -6,7 +6,7 @@
 package com.mygdx.entities.combat;
 
 import com.badlogic.gdx.physics.box2d.FixtureDef;
-import com.mygdx.entities.DynamicEntities.SteerableEntity;
+import com.mygdx.entities.SteerableEntity;
 import static com.mygdx.utilities.UtilityVars.BIT_ATT;
 import static com.mygdx.utilities.UtilityVars.BIT_EN;
 import static com.mygdx.utilities.UtilityVars.BIT_TEAR;
