@@ -17,7 +17,7 @@ import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.StreamUtils;
 import com.mygdx.environments.EnvironmentManager;
 import com.mygdx.game.MainGame;
-import com.mygdx.managers.ResourceManager;
+import com.mygdx.utilities.ResourceManager;
 import com.mygdx.utilities.UtilityVars.Rarity;
 import static com.mygdx.utilities.UtilityVars.Rarity.COMMON;
 import java.io.Reader;

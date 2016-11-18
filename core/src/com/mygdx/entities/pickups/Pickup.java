@@ -13,7 +13,7 @@ import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.World;
 import com.mygdx.entities.Entity;
 import com.mygdx.utilities.FrameCounter;
-import com.mygdx.utilities.SoundObject_Sfx;
+import com.mygdx.utilities.sound.SoundObject_Sfx;
 import static com.mygdx.utilities.UtilityVars.BIT_PICKUP;
 import static com.mygdx.utilities.UtilityVars.BIT_PLAYER;
 import static com.mygdx.utilities.UtilityVars.BIT_WALL;

@@ -7,13 +7,11 @@ import com.badlogic.gdx.controllers.Controllers;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.mygdx.managers.InputProcessor_Gamepad;
-import com.mygdx.managers.InputProcessor_Keyboard;
-import com.mygdx.managers.GameKeyLibrary;
-import com.mygdx.managers.ResourceManager;
-import com.mygdx.managers.SoundManager;
-import com.mygdx.screen.ScreenManager;
-import com.mygdx.screen.LoadingScreen;
+import com.mygdx.utilities.InputProcessor_Gamepad;
+import com.mygdx.utilities.InputProcessor_Keyboard;
+import com.mygdx.utilities.GameKeyLibrary;
+import com.mygdx.utilities.ResourceManager;
+import com.mygdx.utilities.sound.SoundManager;
 
 public class MainGame extends ApplicationAdapter {
 

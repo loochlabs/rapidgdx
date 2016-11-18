@@ -7,7 +7,7 @@ package com.mygdx.entities.DynamicEntities.enemies;
 
 import com.badlogic.gdx.math.Vector2;
 import com.mygdx.game.MainGame;
-import com.mygdx.managers.ResourceManager;
+import com.mygdx.utilities.ResourceManager;
 
 /**
  *

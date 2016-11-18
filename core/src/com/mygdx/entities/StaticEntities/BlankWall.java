@@ -7,7 +7,7 @@ package com.mygdx.entities.StaticEntities;
 
 import com.badlogic.gdx.math.Vector2;
 import com.mygdx.game.MainGame;
-import com.mygdx.managers.ResourceManager;
+import com.mygdx.utilities.ResourceManager;
 import static com.mygdx.utilities.UtilityVars.BIT_ATT;
 import static com.mygdx.utilities.UtilityVars.BIT_EN;
 import static com.mygdx.utilities.UtilityVars.BIT_PICKUP;

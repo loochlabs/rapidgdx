@@ -6,7 +6,7 @@
 package com.mygdx.environments;
 
 import com.badlogic.gdx.graphics.Color;
-import com.mygdx.managers.MainContactListener;
+import com.mygdx.utilities.MainContactListener;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -14,7 +14,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Array;
-import com.mygdx.camera.OrthoCamera;
+import com.mygdx.utilities.camera.OrthoCamera;
 import com.mygdx.entities.Entity;
 import com.mygdx.entities.Entity.EntityComp;
 import com.mygdx.entities.ImageSprite;
@@ -23,11 +23,11 @@ import com.mygdx.entities.text.TextDamage;
 import com.mygdx.entities.text.TextEntity;
 import com.mygdx.game.MainGame;
 import static com.mygdx.game.MainGame.RATIO;
-import com.mygdx.managers.FrameManager;
-import com.mygdx.managers.StateManager;
-import com.mygdx.managers.StateManager.State;
-import com.mygdx.screen.GameScreen;
-import com.mygdx.screen.ScreenManager;
+import com.mygdx.utilities.FrameManager;
+import com.mygdx.utilities.StateManager;
+import com.mygdx.utilities.StateManager.State;
+import com.mygdx.game.GameScreen;
+import com.mygdx.game.ScreenManager;
 import com.mygdx.utilities.FrameCounter;
 import com.mygdx.utilities.UtilityVars;
 import java.util.ArrayList;
@@ -38,7 +38,7 @@ import java.util.Random;
  *
  * @author looch
  */
-public class Environment {
+public abstract class Environment {
     
     protected float width, height;
     protected Texture playTexture, introTexture, outroTexture;

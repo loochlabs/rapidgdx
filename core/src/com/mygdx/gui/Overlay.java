@@ -13,8 +13,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.entities.DynamicEntities.enemies.EnemyManager;
 import com.mygdx.entities.DynamicEntities.enemies.Enemy_TestMon;
 import com.mygdx.game.MainGame;
-import com.mygdx.managers.FrameManager;
-import com.mygdx.managers.ResourceManager;
+import com.mygdx.utilities.FrameManager;
+import com.mygdx.utilities.ResourceManager;
 import com.mygdx.utilities.FrameCounter;
 
 /**

@@ -6,10 +6,10 @@
 package com.mygdx.environments;
 
 import com.badlogic.gdx.math.Vector2;
-import com.mygdx.entities.DynamicEntities.player.PlayerEntity;
-import com.mygdx.entities.DynamicEntities.player.Player_Test;
-import com.mygdx.environments.EnvRoom.EnvRoom;
-import com.mygdx.managers.GameKeyLibrary;
+import com.mygdx.entities.player.PlayerEntity;
+import com.mygdx.entities.player.Player_Test;
+import com.mygdx.environments.EnvDefault.EnvDefault;
+import com.mygdx.utilities.GameKeyLibrary;
 import java.util.HashMap;
 
 /**
@@ -28,7 +28,7 @@ public class EnvironmentManager {
     public static void init(int index){
         switch(index){
             default:
-                currentEnv = new EnvRoom(0,1);
+                currentEnv = new EnvDefault(0,1);
         }
         
         FULL_ENV_MAP.put(currentEnv.getId(), currentEnv);

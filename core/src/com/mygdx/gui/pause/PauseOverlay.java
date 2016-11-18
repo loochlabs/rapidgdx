@@ -8,7 +8,7 @@ package com.mygdx.gui.pause;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.MainGame;
 import static com.mygdx.game.MainGame.RATIO;
-import com.mygdx.screen.ScreenManager;
+import com.mygdx.game.ScreenManager;
 import java.util.Stack;
 
 /**

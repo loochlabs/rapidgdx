@@ -6,7 +6,6 @@
 package com.mygdx.utilities;
 
 import com.mygdx.game.MainGame;
-import com.mygdx.managers.FrameManager;
 
 /**
  *
