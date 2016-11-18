@@ -19,7 +19,7 @@ import com.badlogic.gdx.utils.StreamUtils;
 import com.mygdx.entities.DynamicEntities.SteerableEntity;
 import com.mygdx.entities.Entity;
 import com.mygdx.entities.ImageSprite;
-import com.mygdx.environments.tears.TearPortal;
+import com.mygdx.environments.portal.Portal;
 import com.mygdx.environments.EnvironmentManager;
 import com.mygdx.game.MainGame;
 import static com.mygdx.game.MainGame.RATIO;

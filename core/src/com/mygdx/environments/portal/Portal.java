@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mygdx.environments.tears;
+package com.mygdx.environments.portal;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
@@ -29,7 +29,7 @@ import static com.mygdx.utilities.UtilityVars.PPM;
  *
  * @author looch
  */
-public class TearPortal extends SteerableEntity{
+public abstract class Portal extends SteerableEntity{
     
     protected int linkid;
     protected ImageSprite dmgSprite, openSprite;
@@ -55,7 +55,7 @@ public class TearPortal extends SteerableEntity{
     public boolean isComplete() { return complete; }
     public void setOpened(boolean opened) { this.opened = opened; }
     
-    public TearPortal(Vector2 pos, int linkid){
+    public Portal(Vector2 pos, int linkid){
         super(pos,50f*RATIO,50f*RATIO);
         
         bd.type = BodyType.StaticBody;
