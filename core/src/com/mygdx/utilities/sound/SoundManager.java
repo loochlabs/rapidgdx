@@ -7,8 +7,6 @@ package com.mygdx.utilities.sound;
 
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
-import com.mygdx.utilities.sound.SoundObject_Sfx;
-import com.mygdx.utilities.sound.SoundObject_Bgm;
 
 /**
  *

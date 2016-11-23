@@ -34,8 +34,8 @@ public class EnvDefault extends Environment{
         Initial room settings
         */
         
-        width = 5000*RATIO;
-        height = 5000*RATIO;
+        width = 1000*RATIO;
+        height = 1000*RATIO;
         fgx = 0;
         fgy = 0;
         fgw = width;
@@ -62,6 +62,8 @@ public class EnvDefault extends Environment{
         spawnEntity(new BlankWall(new Vector2( (fgx) + width*0.92f, height/2),  border, height/2));//east
         spawnEntity(new BlankWall(new Vector2( (fgx) + width*0.08f, height/2),   border, height/2));//west
         
+        
+        spawnEntity(EnemyManager.createRandom(new Vector2(500f, 500f)));
     }
     
 }

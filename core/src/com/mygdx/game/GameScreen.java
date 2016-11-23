@@ -18,7 +18,6 @@ import com.mygdx.utilities.camera.OrthoCamera;
 import com.mygdx.utilities.camera.ParallaxCamera;
 import com.mygdx.environments.Environment;
 import com.mygdx.environments.EnvironmentManager;
-import com.mygdx.game.MainGame;
 import com.mygdx.gui.Overlay;
 import com.mygdx.gui.pause.PauseOverlay;
 import com.mygdx.utilities.GameStats;
@@ -26,6 +25,7 @@ import com.mygdx.entities.player.PlayerInputManager;
 import com.mygdx.utilities.StateManager;
 import com.mygdx.utilities.StateManager.State;
 import static com.mygdx.utilities.UtilityVars.PPM;
+import com.mygdx.utilities.sound.SoundManager;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -39,7 +39,6 @@ public class GameScreen extends Screen{
     
     private Environment currentEnv;
     private static int startEnvNum = 0; 
-    //public static PlayerEntity player;
     
     //input
     private PlayerInputManager pim;
@@ -134,6 +133,7 @@ public class GameScreen extends Screen{
             //gui
             overlay.update();
             overlayCam.update();
+            
         }
         
         try {

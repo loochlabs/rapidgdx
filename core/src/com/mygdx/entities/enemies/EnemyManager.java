@@ -5,7 +5,9 @@
  */
 package com.mygdx.entities.enemies;
 
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
+import java.util.Random;
 
 /**
  *
@@ -23,22 +25,16 @@ public class EnemyManager {
         enemies.removeValue(e, false);
     }
     
-    /*
-    public static Enemy_TestMon createRandom(Vector2 pos){
+    
+    public static EnemyEntity createRandom(Vector2 pos){
         int index = 4;
         Random rng = new Random();
         switch(rng.nextInt(index)){
             case 0:
-                return new Enemy_Mousine(pos);
-            case 1:
-                return new Enemy_Creepit(pos);
-            case 2:
-                return new Enemy_Poe(pos);
-            case 3:
-                return new Enemy_Lumen(pos);
+                return new Enemy_Test(pos);
             default:
-                return new Enemy_Mousine(pos);
+                return new Enemy_Test(pos);
         }
-    }*/
+    }
     
 }

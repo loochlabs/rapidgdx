@@ -7,6 +7,7 @@ package com.mygdx.utilities;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.mygdx.game.MainGame;
@@ -106,6 +107,11 @@ public class ResourceManager {
         asm.load(ENEMY_POE_DEAD, Texture.class);
         asm.load(ENEMY_LUMEN_IDLE, Texture.class);
         asm.load(ENEMY_LUMEN_DEAD, Texture.class);
+        
+        
+        //SOUND
+        asm.load(SFX_TEST, Sound.class);
+        
     }
     
     public void secondaryLoad(){}
@@ -142,6 +148,13 @@ public class ResourceManager {
     public static String ENEMY_POE_DEAD = "pokeman/critters/poe-dead.png";
     public static String ENEMY_LUMEN_IDLE = "pokeman/critters/lumen-front.png";
     public static String ENEMY_LUMEN_DEAD = "pokeman/critters/lumen-recov.png";
+    
+    
+    //******************************
+    //      SOUND
+    //******************************
+    
+    public static String SFX_TEST = "sound/sfx/ui/ui-move.mp3";
     
 }
 
