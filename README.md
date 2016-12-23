@@ -1,6 +1,6 @@
-# README #
+## RapidGDX#
+# Java framework for LibGDX, designed for rapid prototyping.
 
-Null and Void
 
 Developed by Steve Coluccio
 
