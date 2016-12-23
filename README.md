@@ -1,5 +1,5 @@
-## RapidGDX#
-# Java framework for LibGDX, designed for rapid prototyping.
+# RapidGDX#
+## Java framework for LibGDX, designed for rapid prototyping.
 
 
 Developed by Steve Coluccio
